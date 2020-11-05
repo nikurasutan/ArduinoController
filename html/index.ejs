@@ -1,0 +1,29 @@
+<html lang="de">
+    <head>
+        <title>Sch&uuml;sseldrehen</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container" id="particles-js">
+            <button class="key icon"><span>Schl&uuml;ssel dehen</span></button>
+        </div>
+        <script>
+            key = document.querySelector('.key');
+            key.onclick = function(){
+                fetch('http://localhost:3001/drehen');
+            };
+        </script>
+        <script type="text/javascript" src="vanilla-tilt.js"></script>
+        <script type="text/javascript">
+            VanillaTilt.init(document.querySelectorAll(".icon"),{
+                max: 15,
+                scale: 1.05,
+                glare: true,
+                "max-glare": 0.25,
+                axis: null,
+                reverse: true,
+                speed: 1000
+            });
+        </script>
+    </body>
+</html>

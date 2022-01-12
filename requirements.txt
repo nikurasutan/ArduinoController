@@ -5,7 +5,7 @@ Flask-WTF==0.14.3
 itsdangerous==1.1.0
 Jinja2==2.11.2
 MarkupSafe==1.1.1
-pipenv==2018.11.26
+pipenv==2022.1.8
 pyserial==3.4
 virtualenv==16.7.7
 virtualenv-clone==0.5.3
